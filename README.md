@@ -13,7 +13,7 @@ HTML and CSS
 Clone the project
 
 ```bash
-  git clone https://github.com/vchaitanya7/JournalApp
+  git clone https://github.com/vchaitanya7/TheMandalorian
 ```
 
 Go to the project directory
