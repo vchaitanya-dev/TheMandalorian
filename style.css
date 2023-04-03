@@ -1,0 +1,227 @@
+/* importing fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+    font-family:'mandalore';
+    src: url(./assets/font/mandalore.ttf);
+}
+@font-face {
+    font-family:'StarJedi' ;
+    src: url(./assets/font/StarJedi.ttf);
+}
+/* assagining the fonts and color to root */
+:root{
+    --textSize:'Open Sans';
+    --mando: "mandalore";
+    --star:"StarJedi";
+    --bg: #0B1320;
+    --subbg:#394D5f;
+    --textColor:#FEF9E6;
+    --duration:2s;
+}
+/* body and background setting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: auto;
+    height: 100vh;
+    background: var(--bg);
+}
+/* Navbar */
+.navbar{
+    width: auto;
+    background: var(--textColor);
+    height: 8vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+  padding: 10px;
+}
+.heading{
+    font-size: 1rem;
+    font-family: var(--star);
+    letter-spacing: 10px;
+    color: var(--subbg);
+    text-transform: uppercase;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+}
+/* Right card */
+.Right_cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    margin-top: -20px;
+}
+.Right_Image{
+    animation: fade-in-right 4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    width: 50%;
+    place-content: center;
+    margin-left: 15%;
+}
+
+.Rightcard-text{
+    display: flex;
+    flex-direction: column;
+    margin-top:2% ;
+    justify-content: center;
+    gap: 2%;
+    animation: fade-in-left 4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+
+}
+.Right_header{
+    font-size: 32px;
+    color: var(--textColor);
+    font-family: var(--mando);
+    letter-spacing: 5px;
+    margin-left: 10%;
+}
+
+.Right_Text{
+    color: var(--textColor);
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    width: 75%;
+    font-size:1rem;
+    font-family: var(--textSize);
+    word-spacing: 4px;
+}
+/* Left card  */
+.Left_cards{
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+   gap: 2%;  
+   margin-top: 4%;
+}
+.Left_Image{
+    width: 55%;  
+    place-self: center;
+animation: fade-in-left 4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    100% {
+      
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+.Leftcard_text{
+    margin-left: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-top:10% ;
+    gap: 2%;
+    animation: fade-in-right 4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+
+}
+.Left_header{
+    font-size: 32px;
+    color: var(--textColor);
+    font-family: var(--mando);
+    letter-spacing: 5px;
+    place-self: center;
+}
+.Left_Text{
+    color: var(--textColor);
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    width: 75%;
+    font-size:1rem;
+    font-family: var(--textSize);
+    word-spacing: 4px;
+
+}
+/* footer */
+.footer{
+    width: auto;
+    background: var(--textColor);
+    height: 8vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+  padding: 10px;
+}
+.footerName{
+    font-size: 18px;
+}
+@media  screen and (min-width:600px) {
+    .navbar{
+        width: auto;
+        background: var(--textColor);
+        height: 8vh;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+      padding: 10px;
+    }
+    .heading{
+        font-size: 2.5rem;
+        font-family: var(--star);
+        letter-spacing: 10px;
+        color: var(--subbg);
+        text-transform: uppercase;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+    }
+    .Right_cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2%;
+    }
+    .Right_Image{
+        width: 25%;
+        place-content: center;
+        margin-left: 15%;
+    }
+    
+    .Left_cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2%;  
+        margin-top: -4%; 
+     }
+     .Left_Image{
+        width: 25%;
+        height: 25%;
+        margin-right: 5%;
+    margin-top: 5%;  
+    margin-bottom: 5%; 
+    animation: fade-in-left 2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+    .Greef{
+        margin-top: -10%;
+        width: 35%;
+    }
+    .groku{
+        margin-top: -10%;
+    }
+}
+
